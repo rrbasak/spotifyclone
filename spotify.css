@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Ubuntu:ital,wght@0,500;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Ubuntu:ital,wght@0,500;1,300&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: rgb(154, 162, 231);  */
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#bb1414);
+    height: 1000px;
+    position: relative;
+    animation: changes 5s ease-in-out infinite;
+}
+
+@keyframes changes {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    
+}
+nav ul{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 65px;
+    width: 100%;
+    top: 0%;
+    background-color: black;
+    border-radius: 33px;
+    background-image: linear-gradient(90deg,#e0901f,#d38312);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    color: rgb(109, 207, 64);
+    cursor: pointer;
+    z-index: 1;
+}
+nav ul li{
+    padding: 12px;
+    
+}
+#navbar{
+    text-transform: uppercase;
+}
+a{
+    color: rgb(86, 114, 241);
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:500;
+}
+#navbar:hover{
+    transition: all 0.3s ease-in;
+    transform: scale(1.2);
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+a:hover{
+    transition: all 0.3s ease-in;
+    color: rgb(107, 211, 107);
+}
+.brand img{
+    width: 44px;
+    padding: 8px;
+    
+}
+.brand img:hover{
+    transition: all 0.7s ease-in;
+    transform: scale(1.1);
+    
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    
+    min-height: 40vh;/*70vh means: 70 % of total height */
+
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    padding-top: 88px; 
+    /*margin: 174px;*/
+    margin-top: 110px;
+    min-height: 10vh;
+    background: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg") no-repeat center center/cover;
+}
+
+.bottom{
+    position: sticky;
+    background-image:linear-gradient(90deg,#856f51,#d38312);
+    color: white;
+    height: 100px;
+    
+    border-radius: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rangebox{
+    position: sticky;
+}
+.icons{
+    margin: 12px;
+}
+.icons i{
+    cursor: pointer;
+}
+#songbar{
+    width: 75vw;
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin: 75px 0px;
+}
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color:#e7a84e;
+    color: black;
+    width: 35vw;
+    margin: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songitem img{
+    height: 42px;
+    width: 47px;
+    border-radius: 22px;
+    margin: 0px 10px;
+}
+.time{
+    margin: 0 23px;
+}
+.time i{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 13vw;
+    font-family: 'Varela Round',sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+
+
+
+.about{
+    border-radius: 72px;
+    margin-top: 10px;
+    padding-top: 74px;
+    padding-left: 10px;
+    background-color: palevioletred;
+    height: 570px;
+    font-family: 'Corinthia', cursive;
+font-family: 'Ubuntu', sans-serif;
+    
+}
+.aboutcontain{
+    display: flex;
+    
+    flex-direction: column;
+    padding: 50px;
+} 
+#head{
+    font-weight: 200;
+    font-size: 65px;
+}
+#small{
+    font-size: 22px;
+    
+
+}    
+.aboutcontain p{
+    padding: 5px;
+    margin-left: -5px;
+}
+.aboutcontain p a{
+    color: black;
+}    
+.aboutcontain p a:hover{
+    transition: all 0.3s ease-in;
+    transform: scale(1.2);
+    color: rgb(101, 179, 101);
+}
