@@ -1,6 +1,6 @@
 console.log("spotify")
 let songindex=0
-let audioelement=new Audio('songs/1.mp3')
+let audioelement=new Audio('1.mp3')
 let masterplay=document.getElementById('masterplay')
 let myprograssbar=document.getElementById('songbar')
 let songitem=document.getElementsByClassName('songitem')
@@ -9,16 +9,16 @@ let songitemplay=Array.from(document.getElementsByClassName('songItemplay'))
 let gif=document.getElementById('gif')
 
 let songs=[
-    {songname:"salam-e-ishq ",filepath:"songs/1.mp3",coverpage:"covers/1.jpg"},
-    {songname:"Na tum jano na hum ",filepath:"songs/2.mp3",coverpage:"covers/2.jpg"},
-    {songname:"chaal chaiya ",filepath:"songs/3.mp3",coverpage:"covers/3.jpg"},
-    {songname:"Jabse tere naina ",filepath:"songs/4.mp3",coverpage:"covers/4.jpg"},
-    {songname:"Tera mera rishta ",filepath:"songs/5.mp3",coverpage:"covers/5.jpg"},
-    {songname:"Bete lamhe ",filepath:"songs/6.mp3",coverpage:"covers/6.jpg"},
-    {songname:"Kaho na kaho ",filepath:"songs/7.mp3",coverpage:"covers/7.jpg"},
-    {songname:"Chalk dik laza ",filepath:"songs/8.mp3",coverpage:"covers/8.jpg"},
-    {songname:"Kya mujhe pyar hain ",filepath:"songs/9.mp3",coverpage:"covers/9.jpg"},
-    {songname:"Hona tha pyar.. ",filepath:"songs/10.mp3",coverpage:"covers/10.jpg"},
+    {songname:"salam-e-ishq ",filepath:"1.mp3",coverpage:1.jpg"},
+    {songname:"Na tum jano na hum ",filepath:"2.mp3",coverpage:"2.jpg"},
+    {songname:"chaal chaiya ",filepath:"3.mp3",coverpage:"3.jpg"},
+    {songname:"Jabse tere naina ",filepath:"4.mp3",coverpage:"4.jpg"},
+    {songname:"Tera mera rishta ",filepath:"5.mp3",coverpage:"5.jpg"},
+    {songname:"Bete lamhe ",filepath:"6.mp3",coverpage:"6.jpg"},
+    {songname:"Kaho na kaho ",filepath:"7.mp3",coverpage:"7.jpg"},
+    {songname:"Chalk dik laza ",filepath:"8.mp3",coverpage:"8.jpg"},
+    {songname:"Kya mujhe pyar hain ",filepath:"9.mp3",coverpage:"9.jpg"},
+    {songname:"Hona tha pyar.. ",filepath:"10.mp3",coverpage:"10.jpg"},
 ]
 
 Array.from(songitem).forEach((element,i) => {
@@ -113,7 +113,7 @@ songitemplay.forEach((element)=>{
             makeallplays()
             e.target.classList.remove('fa-play-circle')
             e.target.classList.add('fa-pause-circle')
-            audioelement.src=`songs/${songindex+1}.mp3`
+            audioelement.src=`${songindex+1}.mp3`
             mastersongname.innerText=songs[songindex].songname
             gif.style.opacity=1
             // audioelement.currentTime=0
@@ -128,7 +128,7 @@ songitemplay.forEach((element)=>{
             makeallplays()
             e.target.classList.add('fa-play-circle')
             e.target.classList.remove('fa-pause-circle')
-            audioelement.src=`songs/${songindex+1}.mp3`
+            audioelement.src=`${songindex+1}.mp3`
             mastersongname.innerText=songs[songindex].songname
             gif.style.opacity=0
             console.log(myprograssbar.value)
@@ -153,7 +153,7 @@ document.getElementById('next').addEventListener('click',()=>{
     }
     mastersongname.innerText=songs[songindex].songname
     gif.style.opacity=1
-    audioelement.src=`songs/${songindex+1}.mp3`
+    audioelement.src=`${songindex+1}.mp3`
     audioelement.currentTime=0
     audioelement.play()
 
@@ -186,7 +186,7 @@ document.getElementById('previous').addEventListener('click',()=>{
     }
     mastersongname.innerText=songs[songindex].songname
     gif.style.opacity=1
-    audioelement.src=`songs/${songindex+1}.mp3`
+    audioelement.src=`${songindex+1}.mp3`
     audioelement.currentTime=0
     audioelement.play()
 
